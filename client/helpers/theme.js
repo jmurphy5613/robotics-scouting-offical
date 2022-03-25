@@ -5,6 +5,11 @@ const theme = createTheme({
         primary: {
             main: '#282c44',
         },
+    },
+    typography: {
+        fontFamily: {
+            primary: '"Inter", sans-serif',
+        }
     }
 });
 
