@@ -14,7 +14,17 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: '20%'
     },
     smallTitle: {
-        fontFamily: theme.typography.fontFamily.primary
+        fontFamily: theme.typography.fontFamily.secondary,
+        fontSize: '1rem'
+    },
+    mainTitle: {
+        fontFamily: theme.typography.fontFamily.primary,
+        color: '#ffffff',
+        fontWeight: '600'
+    },
+    descriptionTitle: {
+        fontFamily: theme.typography.fontFamily.tertiary,
+        color: '#b2bAc2'
     }
 }));
 
@@ -28,10 +38,10 @@ const Homepage: NextPage = () => {
                 <Typography variant="h5" className={classes.smallTitle}>
                     Scouting Application
                 </Typography>
-                <Typography variant="h2">
+                <Typography variant="h2" className={classes.mainTitle}>
                     Scout the right way with ease
                 </Typography>
-                <Typography variant="h4">
+                <Typography variant="h6" className={classes.descriptionTitle}>
                     Jordan is a new public scouting solution built by team 484 that hopes to bring a professional applicaition to the FRC sphere.
                 </Typography>
             </div>
