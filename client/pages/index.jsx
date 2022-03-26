@@ -5,6 +5,7 @@ import Typed from 'react-typed';
 //mui imports
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Typography from "@material-ui/core/Typography";
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -33,16 +34,28 @@ const useStyles = makeStyles(theme => ({
     },
     titleMargin: {
         width: '45%',
-        paddingTop: '12%',
-        paddingLeft: '8%',
+        paddingTop: '16%',
+        paddingLeft: '10%',
         
     },
     inerMainTitle: {
         color: '#fe5b77',
+    },
+    landingPageButton: {
+        backgroundColor: '#6c56d2',
+        color: '#ffffff',
+        fontFamily: theme.typography.fontFamily.secondary,
+        textTransform: 'none',
+        marginTop: '1.7rem',
+        width: '9rem',
+        height: '3.2rem',
+        '&:hover': {
+            backgroundColor: '#6c56d2',
+        }
     }
 }));
 
-const Homepage: NextPage = () => {
+const Home = () => {
 
     const classes = useStyles();
 
@@ -66,10 +79,14 @@ const Homepage: NextPage = () => {
                 <Typography variant="h6" className={classes.descriptionTitle}>
                     Jordan is a new public scouting solution built by team 484 that hopes to bring a professional applicaition to the FRC sphere.
                 </Typography>
+                <a href="/downloads" style={{textDecoration: 'none', color: '#ffffff'}}>
+                  <Button variant="contained" className={classes.landingPageButton}>Try Now</Button>
+                </a>
+
             </div>
 
         </div>
     )
 }
 
-export default Homepage;
+export default Home;

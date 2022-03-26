@@ -9,7 +9,7 @@ const theme = createTheme({
     typography: {
         fontFamily: {
             primary: '"Inter", sans-serif',
-            secondary: 'IBM Plex Sans, sans-serif', 
+            secondary: 'Poppins, sans-serif',
             tertiary: 'Noto Sans, sans-serif'
         }
     }
