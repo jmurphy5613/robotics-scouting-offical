@@ -1,5 +1,3 @@
-import { NextPage } from "next";
-
 import Typed from 'react-typed';
 
 //mui imports
@@ -52,6 +50,13 @@ const useStyles = makeStyles(theme => ({
         '&:hover': {
             backgroundColor: '#6c56d2',
         }
+    },
+    image: {
+        position: 'absolute',
+        bottom: '0',
+        right: '5%',
+        width: 'auto',
+        height: 'auto'
     }
 }));
 
@@ -84,7 +89,7 @@ const Home = () => {
                 </a>
 
             </div>
-
+            <img src="/Capture3.png" alt="" className={classes.image} />
         </div>
     )
 }
